@@ -1,0 +1,24 @@
+# main.kv
+<LoginScreen>:
+    orientation: 'vertical'
+    padding: 20
+
+    Label:
+        text: 'Username/Email'
+    TextInput:
+        id: username_input
+        multiline: False
+        size_hint_y: 0.5  # Adjust the size of the text input
+
+    Label:
+        text: 'Password'
+    TextInput:
+        id: password_input
+        password: True
+        multiline: False
+        size_hint_y: 0.5  # Adjust the size of the text input
+
+    Button:
+        text: 'Login'
+        on_press: root.check_login()
+        size_hint_y: 0.4  # Adjust the size of the button
